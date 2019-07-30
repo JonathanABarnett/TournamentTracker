@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TournamentViewForm));
-            this.headerLabel = new System.Windows.Forms.Label();
+            this.tournamentLabel = new System.Windows.Forms.Label();
             this.tournamentName = new System.Windows.Forms.Label();
             this.roundLabel = new System.Windows.Forms.Label();
             this.roundDropDown = new System.Windows.Forms.ComboBox();
@@ -39,22 +39,22 @@
             this.teamOneScoreLabel = new System.Windows.Forms.Label();
             this.teamOneScoreValue = new System.Windows.Forms.TextBox();
             this.teamTwoScoreValue = new System.Windows.Forms.TextBox();
-            this.labelteamTwoScoreLabel = new System.Windows.Forms.Label();
+            this.teamTwoScoreLabel = new System.Windows.Forms.Label();
             this.teamTwoNameLabel = new System.Windows.Forms.Label();
             this.vsLabel = new System.Windows.Forms.Label();
             this.scoreButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // headerLabel
+            // tournamentLabel
             // 
-            this.headerLabel.AutoSize = true;
-            this.headerLabel.Font = new System.Drawing.Font("High Tower Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.headerLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.headerLabel.Location = new System.Drawing.Point(26, 22);
-            this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(161, 32);
-            this.headerLabel.TabIndex = 0;
-            this.headerLabel.Text = "Tournament:";
+            this.tournamentLabel.AutoSize = true;
+            this.tournamentLabel.Font = new System.Drawing.Font("High Tower Text", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tournamentLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.tournamentLabel.Location = new System.Drawing.Point(26, 22);
+            this.tournamentLabel.Name = "tournamentLabel";
+            this.tournamentLabel.Size = new System.Drawing.Size(161, 32);
+            this.tournamentLabel.TabIndex = 0;
+            this.tournamentLabel.Text = "Tournament:";
             // 
             // tournamentName
             // 
@@ -70,11 +70,11 @@
             // roundLabel
             // 
             this.roundLabel.AutoSize = true;
-            this.roundLabel.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundLabel.ForeColor = System.Drawing.Color.LightCoral;
+            this.roundLabel.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundLabel.ForeColor = System.Drawing.Color.DodgerBlue;
             this.roundLabel.Location = new System.Drawing.Point(36, 75);
             this.roundLabel.Name = "roundLabel";
-            this.roundLabel.Size = new System.Drawing.Size(75, 25);
+            this.roundLabel.Size = new System.Drawing.Size(70, 25);
             this.roundLabel.TabIndex = 2;
             this.roundLabel.Text = "Round";
             // 
@@ -90,11 +90,11 @@
             // 
             this.unplayedOnlyCheckbox.AutoSize = true;
             this.unplayedOnlyCheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.unplayedOnlyCheckbox.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.unplayedOnlyCheckbox.ForeColor = System.Drawing.Color.LightCoral;
+            this.unplayedOnlyCheckbox.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unplayedOnlyCheckbox.ForeColor = System.Drawing.Color.DodgerBlue;
             this.unplayedOnlyCheckbox.Location = new System.Drawing.Point(117, 118);
             this.unplayedOnlyCheckbox.Name = "unplayedOnlyCheckbox";
-            this.unplayedOnlyCheckbox.Size = new System.Drawing.Size(178, 29);
+            this.unplayedOnlyCheckbox.Size = new System.Drawing.Size(165, 29);
             this.unplayedOnlyCheckbox.TabIndex = 4;
             this.unplayedOnlyCheckbox.Text = "Unplayed Only";
             this.unplayedOnlyCheckbox.UseVisualStyleBackColor = true;
@@ -146,16 +146,16 @@
             this.teamTwoScoreValue.Size = new System.Drawing.Size(100, 32);
             this.teamTwoScoreValue.TabIndex = 11;
             // 
-            // labelteamTwoScoreLabel
+            // teamTwoScoreLabel
             // 
-            this.labelteamTwoScoreLabel.AutoSize = true;
-            this.labelteamTwoScoreLabel.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelteamTwoScoreLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.labelteamTwoScoreLabel.Location = new System.Drawing.Point(329, 356);
-            this.labelteamTwoScoreLabel.Name = "labelteamTwoScoreLabel";
-            this.labelteamTwoScoreLabel.Size = new System.Drawing.Size(62, 25);
-            this.labelteamTwoScoreLabel.TabIndex = 10;
-            this.labelteamTwoScoreLabel.Text = "Score";
+            this.teamTwoScoreLabel.AutoSize = true;
+            this.teamTwoScoreLabel.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teamTwoScoreLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.teamTwoScoreLabel.Location = new System.Drawing.Point(329, 356);
+            this.teamTwoScoreLabel.Name = "teamTwoScoreLabel";
+            this.teamTwoScoreLabel.Size = new System.Drawing.Size(62, 25);
+            this.teamTwoScoreLabel.TabIndex = 10;
+            this.teamTwoScoreLabel.Text = "Score";
             // 
             // teamTwoNameLabel
             // 
@@ -202,7 +202,7 @@
             this.Controls.Add(this.scoreButton);
             this.Controls.Add(this.vsLabel);
             this.Controls.Add(this.teamTwoScoreValue);
-            this.Controls.Add(this.labelteamTwoScoreLabel);
+            this.Controls.Add(this.teamTwoScoreLabel);
             this.Controls.Add(this.teamTwoNameLabel);
             this.Controls.Add(this.teamOneScoreValue);
             this.Controls.Add(this.teamOneScoreLabel);
@@ -212,7 +212,7 @@
             this.Controls.Add(this.roundDropDown);
             this.Controls.Add(this.roundLabel);
             this.Controls.Add(this.tournamentName);
-            this.Controls.Add(this.headerLabel);
+            this.Controls.Add(this.tournamentLabel);
             this.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -226,7 +226,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label headerLabel;
+        private System.Windows.Forms.Label tournamentLabel;
         private System.Windows.Forms.Label tournamentName;
         private System.Windows.Forms.Label roundLabel;
         private System.Windows.Forms.ComboBox roundDropDown;
@@ -236,7 +236,7 @@
         private System.Windows.Forms.Label teamOneScoreLabel;
         private System.Windows.Forms.TextBox teamOneScoreValue;
         private System.Windows.Forms.TextBox teamTwoScoreValue;
-        private System.Windows.Forms.Label labelteamTwoScoreLabel;
+        private System.Windows.Forms.Label teamTwoScoreLabel;
         private System.Windows.Forms.Label teamTwoNameLabel;
         private System.Windows.Forms.Label vsLabel;
         private System.Windows.Forms.Button scoreButton;
